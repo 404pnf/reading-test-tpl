@@ -1,2 +1,5 @@
 body { padding-top: 100px; }
+
 #logo-and-user-status { padding:  20px; }
+
+#sidebar-nav-fixed {   position: fixed; }
