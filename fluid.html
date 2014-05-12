@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="theme/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="theme/css/bootstrap-responsive.css">
-
   <link rel="stylesheet" href="theme/css/report.css">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,40 +23,42 @@
   <body>
     <div class="container">
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">logo</a>
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">logo</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#about">站点名称</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span>用户名</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-lock"></span>重设密码</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-out">退出</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">全部</a></li>
+              <li><a href="#">未完成考试</a></li>
+              <li class=""><a href="#">已完成考试</a></li>
+              <li class=""><a href="#">进入模拟考试</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#about">站点名称</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span>用户名</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-lock"></span>重设密码</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-out">退出</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">全部</a></li>
-            <li><a href="#">未完成考试</a></li>
-            <li class=""><a href="#">已完成考试</a></li>
-            <li class=""><a href="#">进入模拟考试</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
-    <div class="row">
-      <div id="sidebar" class="col-md-1 affix">
-        <ul class="list-unstyled"><li>2012</li><li>2012</li><li>2012</li></ul>
       </div>
 
-      <div id="content" class="col-md-11 col-md-offset-1">
+      <div class="row" id="content">
+        <div id="sidebar" class="col-md-1 affix">
+          <ul class="list-unstyled"><li>2012</li><li>2012</li><li>2012</li></ul>
+        </div>
 
-      <div class="row">
-        <div class="col-md-4 col-lg-3"><div class="date-and-time">
+        <div id="content" class="col-md-11 col-md-offset-1">
+
+          <div class="row">
+
+            <div class="col-md-4 single-report">
+              <div class="date-and-time">
                 <span class="month">6月</span>
                 <span class="day">6日</span>
                 <span class="hour">15:00</span>
@@ -66,32 +67,90 @@
               <div class="content">
                 <div class="exam-name"><p class="">20140505一次英语考试</p></div>
                 <div class="ending-time">截止时间：2014-06-30 15：00</div>
-              </div> <!-- .content --></div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-md-4 col-lg-3">.col-xs-6 .col-sm-3<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+              </div> <!-- .content -->
+            </div> <!-- .single-report -->  <!-- .col-md-4 -->
 
-        <!-- Add the extra clearfix for only the required viewport -->
-        <!--   <div class="clearfix visible-xs"></div> -->
-      </div>
+            <div class="col-md-4 single-report">
+              <div class="date-and-time">
+                <span class="month">6月</span>
+                <span class="day">6日</span>
+                <span class="hour">15:00</span>
+                <span class="year">2014年</span>
+              </div> <!-- .data-and-time -->
+              <div class="content">
+                <div class="take-exam"><button type="button" class="btn btn-xs btn-block btn-warning">进入考试</botton></div>
+                <div class="ending-time center">截止时间：2014-06-30 15：00</div>
+              </div> <!-- .content -->
+            </div> <!-- .single-report -->  <!-- .col-md-4 -->
+
+            <div class="col-md-4 single-report">
+              <div class="date-and-time">
+                <span class="month">6月</span>
+                <span class="day">6日</span>
+                <span class="hour">15:00</span>
+                <span class="year">2014年</span>
+              </div> <!-- .data-and-time -->
+              <div class="content">
+                <div class="score"><p class="">9A</p><br><br><br><br><br><br></div>
+                <div class="ending-time">截止时间：2014-06-30 15：00</div>
+              </div> <!-- .content -->
+            </div> <!-- .single-report -->  <!-- .col-md-4 -->
+
+
+          </div> <!-- .row 一栏三个结束了-->
+
+          <div class="row">
+
+            <div class="col-md-4 single-report">
+              <div class="date-and-time">
+                <span class="month">6月</span>
+                <span class="day">6日</span>
+                <span class="hour">15:00</span>
+                <span class="year">2014年</span>
+              </div> <!-- .data-and-time -->
+              <div class="content">
+                <div class="exam-name"><p class="">20140505一次英语考试</p></div>
+                <div class="ending-time">截止时间：2014-06-30 15：00</div>
+              </div> <!-- .content -->
+            </div> <!-- .single-report -->  <!-- .col-md-4 -->
+
+            <div class="col-md-4 single-report">
+              <div class="date-and-time">
+                <span class="month">6月</span>
+                <span class="day">6日</span>
+                <span class="hour">15:00</span>
+                <span class="year">2014年</span>
+              </div> <!-- .data-and-time -->
+              <div class="content">
+                <div class="take-exam"><button type="button" class="btn btn-xs btn-block btn-warning">进入考试</botton></div>
+                <div class="ending-time center">截止时间：2014-06-30 15：00</div>
+              </div> <!-- .content -->
+            </div> <!-- .single-report -->  <!-- .col-md-4 -->
+
+            <div class="col-md-4 single-report">
+              <div class="date-and-time">
+                <span class="month">6月</span>
+                <span class="day">6日</span>
+                <span class="hour">15:00</span>
+                <span class="year">2014年</span>
+              </div> <!-- .data-and-time -->
+              <div class="content">
+                <div class="score"><p class="">9A</p><br><br><br><br><br><br></div>
+                <div class="ending-time">截止时间：2014-06-30 15：00</div>
+              </div> <!-- .content -->
+            </div> <!-- .single-report -->  <!-- .col-md-4 -->
+
+
+          </div> <!-- .row 一栏三个结束了-->
+          <!-- Add the extra clearfix for only the required viewport -->
+          <!--   <div class="clearfix visible-xs"></div> -->
+        </div>
       </div><!-- .content-->
-    </div> <!-- .row -->
+    </div> <!-- .container -->
 
-  </div> <!-- .container -->
-
-  <script src="theme/js/jquery.min.js"></script>
-  <script src="theme/js/bootstrap.min.js"></script>
+    <script src="theme/js/jquery.min.js"></script>
+    <script src="theme/js/bootstrap.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <!--   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
-</body>
+  </body>
 </html>
