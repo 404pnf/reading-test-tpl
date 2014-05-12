@@ -21,27 +21,27 @@
 
   <body>
     <div class="container">
-      <div id="logo-and-user-status">
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
           <div class="row">
-            <div id="logo" class="col-md-3"> <!-- logo图 -->
-              <a href="/"><img src="" alt="logo">logo</a>
+            <ul class="nav  navbar-nav list-unstyled">
+              <li id="logo" class="col-md-3"> <!-- logo图 -->
+                <a href="/"><img src="" alt="logo">logo</a>
+              </li>
+              <li id="site-title" class="col-md-4"> <!-- 网站名称 -->
+                <img src="" alt="site-title">title
+              </li>
+              <li id="username" class="col-md-2"> <!-- 用户名 -->
+                <a href="/user"><span class="glyphicon glyphicon-user"></span>username</a>
+              </li>
+              <li id="reset-passwd" class="col-md-2"> <!-- 重设密码 -->
+                <a href="/"><span class="glyphicon glyphicon-lock"></span>reset-passwd</a>
+              </li>
+              <li id="logout" class="col-md-1"><!--  登出 -->
+                <a href="/"><span class="glyphicon glyphicon-log-out"></span>logout</a>
+              </li>
             </div>
-            <div id="site-title" class="col-md-4"> <!-- 网站名称 -->
-              <img src="" alt="site-title">title
-            </div>
-            <div id="username" class="col-md-2"> <!-- 用户名 -->
-              <a href="/user"><span class="glyphicon glyphicon-user"></span>username</a>
-            </div>
-            <div id="reset-passwd" class="col-md-2"> <!-- 重设密码 -->
-              <a href="/"><span class="glyphicon glyphicon-lock"></span>reset-passwd</a>
-            </div>
-            <div id="logout" class="col-md-1"><!--  登出 -->
-              <a href="/"><span class="glyphicon glyphicon-log-out"></span>logout</a>
-            </div>
-          </div>
           <div class="row">
-            <ul class="nav nav-tabs">
+            <ul class="nav navbar-nav">
               <div class="col-md-3"></div>
               <div class="col-md-2">
                 <li class="active"><a href="#">全部</a></li>
@@ -58,6 +58,7 @@
             </ul>
           </div>
         </div>
+
       </div>
 
       <div div="content">
