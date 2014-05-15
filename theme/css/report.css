@@ -1,5 +1,140 @@
-body { padding-top: 140px; }
+@charset "utf-8";
+/* CSS Document */
+body { padding-top: 120px; font-family:"微软雅黑"; }
 
 #logo-and-user-status { padding:  20px; }
 
 #sidebar-nav-fixed {   position: fixed; }
+
+.fl{ float:left;}
+.fr{ float:right;}
+
+/* 定制banner
+-------------------------------------------------- */
+/* Override base .navbar-default styles */
+.navbar-nobg{ background: none; border-bottom:0 none;}
+
+.banner_bg{ background:#d9ebf0 url(../img/banner_rightbg.jpg) right no-repeat;}
+.logo_s{ background:url(../img/logo_s.png) no-repeat; font-size:22px; color:#2f2f2f!important; padding-left:165px; height:53px; margin:14px 0 13px 40px!important;}
+.menu-docs{ margin:15px 20px 0 0!important;}
+
+/*
+ * .container
+ */
+ .container-docs{ background:#f1f1f1; padding:0!important; }
+ .content{ text-align:center;}
+/*
+ * Main navigation
+ *
+ * Turn the `.navbar` at the top of the docs blue.
+ */
+ .nav-docs{ padding-left:200px;}
+ .bs-docs-nav {
+  text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+  background-color: #005daf;
+  border-color: #463265;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+.bs-docs-nav .navbar-collapse {
+  border-color: #463265;
+}
+.bs-docs-nav .navbar-brand {
+  color: #fff;
+}
+.bs-docs-nav .navbar-nav > li > a {
+  color: #d9e9f7;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.bs-docs-nav .navbar-nav > li > a:hover {
+  color: #fff;
+}
+.bs-docs-nav .navbar-nav > .active > a,
+.bs-docs-nav .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: #00417a;
+}
+.bs-docs-nav .navbar-toggle {
+  border-color: #563d7c;
+}
+.bs-docs-nav .navbar-toggle:hover {
+  background-color: #463265;
+  border-color: #463265;
+}
+
+/*
+ *sidenav
+ */
+.list-docs{ background:#ffffff; border:1px #e9e9e9 solid; margin:30px 50px 0 50px;}
+.list-docs li{ border-bottom:1px #e9e9e9 solid; text-align:center; padding:10px 0}
+.list-docs li a{ color:#828282; font-size:20px;}
+.list-docs li a.active{ font-size:22px; color:#4482b2}
+
+/*
+ *single-exam
+ */
+.single-report-1,.single-report-2{ border-radius:3px;box-shadow: 0 1px 2px rgba(0,0,0,.3);-moz-box-shadow: 0 1px 2px rgba(0,0,0,.3);-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3); background:#ffffff; margin-top:10px; margin-bottom:20px;}
+
+/*single-report-1*/
+.single-report-1 .date-and-time{ background:#a9c4de;}
+
+.single-report-1 .month,.single-report-2 .month{ color:#ffffff; font-size:20px; width:25%; height:100%; display:inline-block; text-align:center; border-top-left-radius:3px;border-top-right-radius:3px;}
+.single-report-1 .month{background:#4482b2;line-height: 160%;}
+
+.single-report-1 .day,.single-report-1 .hour,.single-report-1 .year{ color:#2b4e71; font-size:16px;}
+.single-report-1 .year,.single-report-2 .year{ margin:5px 10px 0 0;}
+.single-report-1 .ending-time,.single-report-2 .ending-time{ color:#7d7d7d; padding-bottom:10px;}
+.single-report-1 .exam-name{ font-size:16px; color:#333333; margin:20px 0;}
+
+/*single-report-2*/
+.single-report-2 .date-and-time{ background:#e4e4e4;}
+.single-report-2 .month{background:#bdbdbd;line-height: 160%;}
+.single-report-2 .day,.single-report-2 .hour,.single-report-2 .year{ color:#414141; font-size:16px;}
+.single-report-2 .exam-name{ font-size:16px; color:#333333; margin:20px 0 10px 0;}
+.single-report-2 .exam-res{ font-size:38px; color:#474747;margin-bottom: 5px;}
+
+/* 定制"进入考试"按钮
+-------------------------------------------------- */
+
+/* Override base .btn styles */
+/* Apply text and background changes to three key states: default, hover, and active (click). */
+.btn-docs,
+.btn-docs:hover,
+.btn-docs:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #568eba;
+  border-radius: 0px;
+  margin:0px auto 20px auto;
+  display:inline-block;
+}
+
+/* Apply the custom-colored gradients */
+/* Note: you'll need to include all the appropriate gradients for various browsers and standards. */
+.btn-docs {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
+}
+
+/* Set the hover state */
+/* An easy hover state is just to move the gradient up a small amount. Add other embellishments as you see fit. */
+.btn-docs:hover {
+  background-position: 0 -15px;
+}
+
+.btn-sim{ color:#043865; background:-webkit-gradient(linear, 0 0, 0 100%, from(#a5c6fe), to(#8fb0e8)); margin-top:6px;margin-left: 20px;padding: 3px 10px;}
+.btn-sim:hover, .btn-sim:focus, .btn-sim:active, .btn-sim.active, .open .dropdown-toggle.btn-sim {
+color: #043865;
+background-color: #8fb0e8;
+}
+
+.ch-padding{ padding-left:0!important; padding-right:20px!important;}
+
+/*one-year*/
+.one-year{ border-top:1px solid #ffffff; border-bottom:1px solid #d9d9d9; padding-bottom:10px;}
+.year-lab{ display:block; margin-top:5px; color:#939393;}
+.last-year{ padding-bottom:30px;}
+
+/*report-en*/
+.report-en{ font-size:14px; color:#474747; text-decoration:underline; margin-bottom:20px;display: inline-block;}

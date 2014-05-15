@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+.clear{ clear:both}
+.fright{ float:right}
+.fleft{ float:left}
+.oh{ overflow:hidden}
+
+/*login*/
+.wapper_login{  background:#ffffff url(../img/login_bg.jpg) top center no-repeat;height:479px; width:100%; padding-top:50px;}
+.login_width{ width:780px; margin-right:auto!important; margin-left:auto!important;}
+.login_logo{ background:url(../img/logo_report.jpg) no-repeat; margin:0px 0 22px 0; height:70px; padding-left:215px; width:565px!important; }
+.big_tit{ color:#4b4b4b; font-family:"微软雅黑","幼圆"; font-size:26px; padding-right:10px; line-height:70px;}
+.small_tit{color:#ffffff; font-family:"宋体"; font-size:14px; margin-left:15px; background:#b2b2b2; border-radius:3px; padding:9px 15px;}
+.login_main{ overflow:hidden}
+.login_form_box{ width:275px; height:337px; background:url(../img/login_form_bg.png) no-repeat}
+.form_width{ width:220px; margin:18px auto 0 auto;}
+.login_form_box div{ margin-bottom:20px;}
+.login_error{ border:1px solid #ef8b8b; background:#ffebec url(../img/icon1.png) 8px 8px no-repeat; padding:8px 8px 8px 32px; font-size:13px; color:#ec1a1a;}
+.login_user,.login_pw{ border:1px solid #c0c0c0;padding:0 0 0 32px; font-size:13px; background-image:url(../img/icon1.png); background-repeat:no-repeat; background-color:#FFF;}
+.login_user{ background-position: 8px -17px;}
+.login_pw{ background-position:8px -42px;}
+.login_user input,.login_pw input{ border:none 0; height:32px; width:185px; line-height:32px;}
+.CAPTCHA_input{ width:90px; border:1px solid #c0c0c0; height:28px; line-height:28px;}
+.login_a{ font-size:13px; color:#000; text-decoration:none; display:inline-block;}
+.login_imag{ margin-right:4px;}
+.login_btn{ background:#005daf!important; width:93px; height:28px!important; color:#FFF; display:inline-block; text-decoration:none; line-height:28px; text-align:center; font-size:14px; font-family:"微软雅黑"; margin-right:5px;}
+.login_footer{ font-size:13px; text-align:right; line-height:20px; color:#7d7d7d; margin-top:10px;}
+.forget_tip{ display:none; width:150px; background:#FFFEE6; border:1px solid #999; position:absolute; top:-60px;left: -100px; padding:5px; line-height:150%}
+.forget_pw{ position:relative}
+a.forget_pw:hover .forget_tip{ display:block}
+/*j_content*/
+.j_content{ margin:100px 0 0 100px;}
+.j_content label{ margin-right:15px;}
+.j_content div{ height:40px;}
+.forget_pwd{ line-height:40px; color:#1a68a8; margin-right:10px;}
+.panel-body{
+    background-color: #FFFFFF;
+}
